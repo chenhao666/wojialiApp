@@ -1,0 +1,20 @@
+/**app.wxss**/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  padding-bottom: 30rpx;
+} 
+page{
+  width: 100%;
+  overflow-x: hidden;
+}
+/*通用样式*/
+@import "libs/font/font.wxss";
+/*导航样式*/
+component-footer{
+  width: 100%;
+}

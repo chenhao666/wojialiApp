@@ -1,0 +1,21 @@
+<view class='container'>
+  <button class='user_info' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+    <image src='{{ loginFlag ? userPhoto : "img/photo.png" }}'></image>
+    <text>{{ loginFlag ? nikeName : "点击登录" }}</text>
+    <view style='clear:both'></view>
+  </button>  
+  
+  <view class='user_item' style="margin-top:20rpx;border-bottom:none;">
+    <image src='img/my_fangan_icon.png' class='icon'></image>
+    <text>我的方案</text>
+    <image src='../../images/icon_more.png' class='more'></image>
+    <view class='clear:both'></view>
+  </view>
+
+  <view class='user_item' bindtap='goSetting' style='cursor:pointer'>
+    <image src='img/my_shezhi_icon.png' class='icon'></image>
+    <text>设置</text>
+    <image src='../../images/icon_more.png' class='more'></image>
+    <view class='clear:both'></view>
+  </view>
+</view>

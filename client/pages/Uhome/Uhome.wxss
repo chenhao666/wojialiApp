@@ -1,0 +1,27 @@
+/* pages/Uhome/Uhome.wxss */
+.unlogin_img image{
+  width: 261rpx;
+  height: 129rpx;
+  display: block;
+  margin: 0 auto;
+  margin-top: 267rpx;
+}
+.unlogin_txt{
+  width: 100%;
+  text-align: center;
+  height: 29rpx;
+  line-height: 29rpx;
+  font-size: 29rpx;
+  color: #939393;
+  margin-top: 70rpx;
+}
+.loginBtn{
+  width: 611rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  background: none;
+  border: 1rpx solid #d2003e;
+  font-size: 34rpx;
+  margin-top: 165rpx;
+  color:  #d2003e;
+}

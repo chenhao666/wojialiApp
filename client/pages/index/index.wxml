@@ -1,0 +1,85 @@
+<view class='container'>
+    <!--头部-->
+    <view class='herder'>
+        <view class='logo'>
+          <image src='img/logo.gif'></image>
+        </view>
+        <view class='location'>
+          <text>杭州</text>
+          <image class='location_ico' src='img/sanjiao.gif'></image>
+        </view>
+        <view style='clear:both;'></view>
+    </view>
+
+    <!--banner-->
+    <view class='banner'>
+      <swiper indicator-dots="{{indicatorDots}}" indicator-active-color='rgb(251,219,0)' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}" wx:key='{{ key }}'>
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="100" height="auto"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    </view>
+
+    <!--菜单-->
+    <view class='menu'>
+      <view class='left'>
+        <image src='img/img.jpg'></image>
+        <view>
+          <text>软装套餐</text>
+          <text class='hot_ico'>HOT</text>
+        </view>
+        <view>
+          <text class='introduce_h'>软装家电一键搞定</text>
+        </view>
+      </view>
+      <view class='right'>
+        <view class='top'>
+          <view>立即预约</view>
+          <text class='introduce_h'>专属团队为您全屋定制</text>
+          <image src='img/img2.jpg'></image>
+        </view>
+        <view class='bottom'>
+          <view>装修攻略</view>
+          <text class='introduce_h'>全阶段的装修经验</text>
+          <image src='img/img3.jpg'></image>
+        </view>
+      </view>
+    </view>
+
+    <view class='programme'>
+      <view class='tab_card'>
+        <view class='flex_item {{ programmeIndex==0 ?"active" : " " }}' data-index='0' bindtap='changeIndex' style='margin-left:0rpx;'>
+          <text>北欧</text>
+        </view>
+        <view class='flex_item {{ programmeIndex==1 ?"active" : " " }}' data-index='1' bindtap='changeIndex'>
+          <text>现代</text>
+        </view>
+        <view class='flex_item {{ programmeIndex==2 ?"active" : " " }}' data-index='2' bindtap='changeIndex'>
+          <text>港式</text>
+        </view>
+        <!--<view class='line'></view>-->
+      </view>
+
+      <view class='tab_view'>
+        <view class='view_img'>
+          <image src='img/img4.jpg' bindtap="goProgramme"></image>
+        </view> 
+      </view>
+
+      <view class='programe_introduce'>
+        <view class='title'>
+          <view class='left'>
+            <text></text>UI
+          </view>
+          <view class='programe_price'>￥1999㎡</view>
+          <view style='clear:both;'></view>
+        </view>
+
+        <view class='introduce'>
+          简单洒脱,回归自然
+        </view>
+      </view>
+    </view>
+</view>

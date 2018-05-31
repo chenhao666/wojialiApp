@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/programme/programme",
+    "pages/index/index",
+    "pages/Uhome/Uhome",
+    "pages/user/user",
+    "pages/addCgi/addCgi",
+    "pages/user/setting/setting",
+    
+    "pages/programme/3dShow/3dShow"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "窝家里",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home_nav_home_icon_norn.png",
+        "selectedIconPath": "images/home_nav_home_icon_checked.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/Uhome/Uhome",
+        "iconPath": "images/home_nav_uhome_icon_norn.png",
+        "selectedIconPath": "images/home_nav_uhome_icon_checked.png",
+        "text": "Uhome"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "iconPath": "images/home_nav_my_icon_norn.png",
+        "selectedIconPath": "images/home_nav_my_icon_checked.png",
+        "text": "我的"
+      }
+    ],
+    "position": "bottom",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#d2003e",
+    "color": "#a8a8a8"
+  }
+}

@@ -1,0 +1,15 @@
+<!--导航-->
+<view class="nav">
+  <navigator url="/pages/index/index" hover-class="other-navigator-hover" class='{{ (navIndex==0 || !navIndex) ? "active" : " " }}' data-index='0' bindtap='navSelect'>
+    <view class='nav_home_img'></view>
+    <text>首页</text>
+  </navigator>
+  <navigator url="/pages/Uhome/Uhome" hover-class="other-navigator-hover" class='{{ navIndex==1 ? "active" : " " }}' data-index='1' bindtap='navSelect'>
+    <view class='nav_Uhome_img'></view>
+    <text>Uhome</text>
+  </navigator>
+  <navigator url="/pages/user/user" hover-class="other-navigator-hover" class='{{ navIndex==2 ? "active" : " " }}' data-index='2' bindtap='navSelect'>
+    <view class='nav_user_img'></view>
+    <text>我的</text>
+  </navigator>
+</view>

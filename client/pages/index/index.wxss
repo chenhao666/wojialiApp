@@ -1,0 +1,236 @@
+view,text{
+  margin: 0rpx;
+  padding: 0rpx;
+}
+page{
+  background: #ffffff;
+}
+.herder{
+  width: 100%;
+  height: 60rpx;
+  margin-top: 10rpx;
+}
+.logo{
+  float: left;
+  margin-left: 20rpx;
+}
+.logo image{
+  width: 200rpx;
+  height: 60rpx;
+}
+.location{
+  float: left;
+  height: 60rpx;
+  line-height: 76rpx;
+  font-size: 26rpx;
+  position: relative;
+  margin-left:15rpx
+}
+.location image{
+  width: 10rpx;
+  height: 10rpx;
+  position: absolute;
+  bottom: 4rpx;
+}
+
+/*banner轮播*/
+swiper{
+  height: 400rpx;
+}
+.banner{
+  width: 100%;
+  height: 400rpx;
+  margin-top: 10px;
+}
+image.slide-image{
+    width: 100%;
+    display: block;
+    height: 400rpx;
+}
+
+/*菜单*/
+.menu{
+  width: 100%;
+  padding: 14rpx;
+  background: #F2F2F2;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+.menu .left{
+  /*float: left;*/
+  background: #ffffff;
+  width: 331rpx;
+  height: 325rpx;
+  text-align: center;
+}
+.menu .left image{
+  margin: 0 auto;
+  width: 180rpx;
+  height: 180rpx;
+  margin-top: 25rpx;
+  display: block;
+}
+.menu .left text{
+  font-size: 25rpx;
+  margin-top: 38rpx;
+  font-weight: bold;
+}
+.hot_ico{
+  width: 39rpx;
+  height: 23rpx;
+  line-height:23rpx;
+  font-size: 16rpx !important;
+  color: #d2003e;
+  border: 1px solid #d2003e;
+  margin-left: 12rpx;
+  border-top-left-radius: 11rpx;
+  border-top-right-radius: 11rpx;
+  border-bottom-right-radius: 11rpx;
+}
+.introduce_h{
+  color: #787878;
+  font-size:17rpx !important;
+  margin-top: 24rpx;
+}
+.menu .right{
+  /*float: left;*/
+  width: 384rpx;
+  height: 325rpx;
+  /*margin-left: 6rpx;*/
+}
+.menu .right .top{
+  width: 384rpx;
+  height:160rpx;
+  padding-top:51rpx;
+  box-sizing: border-box;
+  background: #ffffff;
+  position: relative;
+}
+.menu .right .top view{
+  height: 25rpx;
+  line-height: 25rpx;
+  font-size: 25rpx;
+  margin-left:29rpx;
+}
+.menu .right .top text{
+  margin-left:29rpx;
+  margin-top: 49rpx;
+}
+.menu .right .top image{
+  width:120rpx;
+  height: 120rpx;
+  position: absolute; 
+  top: 27rpx;
+  left: 235rpx;
+}
+
+.menu .right .bottom{
+  width: 384rpx;
+  height:160rpx;
+  padding-top:51rpx;
+  box-sizing: border-box;
+  background: #ffffff;
+  position: relative;
+  margin-top: 6rpx;
+}
+.menu .right .bottom view{
+  height: 25rpx;
+  line-height: 25rpx;
+  font-size: 25rpx;
+  margin-left:29rpx;
+}
+.menu .right .bottom text{
+  margin-left:29rpx;
+  margin-top: 49rpx;
+}
+.menu .right .bottom image{
+  width:120rpx;
+  height: 120rpx;
+  position: absolute; 
+  top: 27rpx;
+  left: 235rpx;
+}
+
+.programme{
+  width: 100%;
+}
+.tab_card{
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-top: 27rpx;
+  position: relative;
+  width: 100%;
+}
+.tab_card .flex_item{
+  width: 50rpx;
+  text-align: center;
+  font-size: 25rpx;
+  margin-left: 100rpx;
+}
+.tab_card .flex_item.active{
+  color: #d2003e;
+}
+.tab_card .flex_item text{
+  padding-bottom: 11rpx;
+}
+.tab_card .flex_item.active text{
+  border-bottom:6rpx solid #d2003e;
+}
+/*.tab_card .line{
+  width: 48rpx;
+  height: 6rpx;
+  position: absolute;
+  background: #d2003e;
+  top: 36rpx;
+  left: 201rpx;
+}*/
+.tab_view{
+  margin-top: 32rpx;
+  width: 100%;
+}
+.tab_view .view_img{
+  width: 100%;
+  text-align: center;
+}
+.tab_view .view_img image{
+  width: 690rpx;
+  border-radius: 20rpx;
+  box-shadow:3px 3px 3px 3px #ccc;
+}
+.programe_introduce{
+  margin-top: 20rpx;
+}
+.programe_introduce .title{
+  width: 100%;
+  height: 24rpx;
+  line-height: 24rpx;
+  font-size: 24rpx;
+}
+.programe_introduce .title .left{
+  font-weight: bold;
+  letter-spacing: 6rpx;
+  float: left;
+}
+.programe_introduce .title text{
+  display: inline-block;
+  margin-left: 47rpx;
+  margin-right: 13rpx;
+  width: 4rpx;
+  height: 16rpx;
+  background:  #d2003e;
+}
+.programe_price{
+  float: right;
+  margin-right: 65rpx;
+}
+.programe_introduce .introduce{
+  width: 100%;
+  margin-top: 26rpx;
+  margin-left: 61rpx;
+  margin-right: 61rpx;
+  font-size: 24rpx;
+  color: #787878;
+}

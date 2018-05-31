@@ -1,0 +1,279 @@
+page{
+  background: #f2f2f2;
+}
+.swiper-tab{  
+  width: 100%;  
+  text-align: center;  
+  height: 65rpx;
+  line-height: 65rpx;
+  font-size: 26rpx;
+  background: #ffffff
+}  
+swiper-item{
+  width: 100%;
+  height: 100%;
+}
+scroll-view{
+  width: 100%;
+  height: 100%;
+}
+.swiper-tab-list{  
+  display: inline-block;  
+  width: 25%;  
+  color: #777777;  
+}  
+.on text{ 
+  color: #d2003e;  
+  border-bottom: 4rpx solid #d2003e;
+  padding-bottom: 14rpx;
+}  
+  
+.swiper-box{
+  display: block; 
+  height: 100%; 
+  width: 100%;       
+  overflow: hidden; 
+}  
+.swiper-box view{  
+    text-align: center;  
+}  
+/*方案*/
+.programme{
+  width: 100%;
+}
+.programme_list{
+  margin-top: 20rpx;
+  background: #ffffff;
+  width: 100%;
+  border: 1rpx solid #f2f2f2;
+  box-sizing: border-box;
+  padding: 0rpx 30rpx; 
+  padding-bottom: 30rpx;
+}
+.programme .header{
+  width: 100%;
+  height: 86rpx;
+  line-height: 86rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #f2f2f2;
+  font-size: 28rpx;
+  color: #3b3b3b;
+}
+.programme .header text{
+  float: left;
+}
+.programme .header image{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  float: right;
+  margin-top: 27rpx;
+}
+.programme_3Dimg{
+  margin-top: 30rpx;
+  width: 100%;
+  height: 400rpx;
+  position: relative;
+}
+.go3D{
+  position: absolute;
+  border: 4rpx solid #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-radius: 40rpx;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 6rpx;
+  cursor: pointer;
+}
+.go3D text:after{
+  position: absolute;
+  top: 24rpx;
+  right: 40rpx;
+  content:'';
+  font-size: 0;  
+  line-height: 0;  
+  border-width: 18rpx;  
+  border-color: #ffffff;  
+  border-right-width: 0;  
+  border-style: dashed;  
+  border-left-style: solid;  
+  border-top-color: transparent;  
+  border-bottom-color: transparent; 
+}
+.programme_3Dimg image{
+  display: block;
+  width: 100%;
+  height: 400rpx;
+}
+.title{
+  position: absolute;
+  bottom: 30rpx;
+  left: 32rpx;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 34rpx;
+  text-shadow: 2px 2px 2px #000;
+}
+.imgName{
+  float: left;
+  height: 25rpx;
+  line-height: 25rpx;
+  font-size: 25rpx;
+  padding-top: 30rpx;
+}
+.imgName text{
+  margin-right: 30rpx;
+  font-weight: bold;
+  color: #3b3b3b;
+}
+/*付款页面*/
+.pay_list{
+  width: 94%;
+  margin-left: 3%;
+  background: #ffffff;
+  margin-top: 20rpx;
+  border-radius: 16rpx;
+}
+.pay_list .header{
+  width: 100%;
+  height: 67rpx;
+  line-height: 67rpx;
+  padding: 0rpx 25rpx;
+  color: #787878;
+  border-bottom: 1rpx solid #f2f2f2;
+  box-sizing: border-box;
+}
+.pay_list .header .left{
+  float: left;
+  font-size: 17rpx;
+}
+.pay_list .header .right{
+  float: right;
+  font-size: 20rpx;
+  color: #d2003e;
+}
+.pay_list .content_list{
+  width: 92%;
+  margin-left: 4%;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 22rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #f2f2f2;
+}
+.pay_list .content_list .left{
+  float: left;
+  color: #787878;
+}
+.pay_list .content_list .left text{
+  color: #d2003e;
+}
+.pay_list .content_list .right{
+  float: right;
+}
+.pay_list .content_list button{
+  display: inline-block;
+  padding: 0rpx 20rpx;
+  height: 40rpx;
+  margin-top: 25rpx;
+  line-height: 40rpx;
+  font-size: 22rpx;
+  margin-left: 25rpx;
+}
+.goPay{
+  background: #d2003e;
+  color: #ffffff;
+  border: 2rpx solid #d2003e;
+}
+.pay_list .content{
+  width: 92%;
+  margin-left: 4%;
+  padding-bottom: 20rpx;
+}
+.pay_list .content view{
+  display: block;
+  font-size: 23rpx;
+  text-align: left;
+  color: #777777;
+  margin-top: 20rpx;
+}
+.pay_list .content .info {
+  width: 100%;
+}
+.pay_list .content .info text{
+  margin-right: 30rpx;
+}
+.goRefund{
+  background: #ffffff;
+  color: #787878;
+  border: 2rpx solid #787878;
+}
+.payInfo{
+  width: 92%;
+  margin-left: 4%;
+}
+.payInfo .list{
+  padding:25rpx  0rpx; 
+}
+.payInfo .left{
+  float: left;
+  text-align: left;
+  font-size: 23rpx;
+  color: #777777;
+}
+.payInfo .right{
+  float: right;
+  color: #777777;
+  font-size: 17rpx;
+}
+.payInfo .left text{
+  color: #000;
+}
+/*阶段*/
+.step_header{
+  width: 100%;
+  margin-top: 40rpx;
+  text-align: center;
+}
+.box_line{
+  display: inline-block;
+  width: auto;
+}
+.box_line .item_group{
+  float: left;
+}
+.step_item{
+  float: left;
+  list-style: none;
+}
+.item_group.now_step .step_item .iconfont{
+  border-bottom: 2rpx solid #008ad2;
+}
+.item_group.active .step_item .iconfont{
+  color: #d2003e;
+}
+.iconfont{
+  font-size: 40rpx;
+  padding-bottom: 10rpx;
+}
+.step_text{
+  font-size: 18rpx;
+  margin-top: 10rpx;
+}
+.step_item.line{
+  width: 50rpx;
+  height: 0rpx;
+  border-bottom: 1rpx dashed #999;
+  margin-left:16rpx; 
+  margin-right:16rpx; 
+  margin-top: 22rpx;
+}
+.clear{
+  clear: both;
+}

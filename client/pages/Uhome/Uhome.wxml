@@ -1,0 +1,11 @@
+<!--pages/Uhome/Uhome.wxml-->
+<view class='container'>
+  <view class='unlogin_img'>
+    <image src='../../images/cat.png'></image>
+  </view>
+  <view class='unlogin_txt'>{{ loginFlag ? "还没有进行中的项目哦" :"登陆后查看您的项目哦" }}</view>
+
+  <button wx:if="{{ !loginFlag }}" class='loginBtn' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">立即登录</button>
+
+  <button wx:if="{{ loginFlag }}" class='loginBtn' >立即预约</button>
+</view>

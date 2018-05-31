@@ -1,0 +1,202 @@
+<view class='container'>
+  <view class="swiper-tab">  
+      <view class="swiper-tab-list {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">
+        <text>方案</text>
+      </view>  
+
+      <view class="swiper-tab-list {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">
+        <text>付款</text>
+      </view>  
+
+      <view class="swiper-tab-list {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">
+        <text>阶段</text>
+      </view>  
+      
+      <view class="swiper-tab-list {{currentTab==3 ? 'on' : ''}}" data-current="3" bindtap="swichNav">
+        <text>日志</text>
+      </view>  
+  </view>  
+    
+  <swiper current="{{currentTab}}" class="swiper-box" duration="300" style="height:{{winHeight - 31}}px" bindchange="bindChange">  
+      <!-- 方案 -->  
+      <swiper-item> 
+        <scroll-view scroll-y> 
+          <view class='programme'>
+            <!--效果图-->
+            <view class='programme_list'>
+              <view class='header'>
+                <text>效果图</text>
+                <image src='../../images/icon_share.png'></image>
+                <view style='clear:both'></view>
+              </view>
+
+              <view class='programme_3Dimg'>
+                <image src='img/img4.jpg'></image> 
+                <view class='go3D' bindtap='go3D'><text>3D</text></view>
+                <!--描述-->
+                <view class='title'>极致生活·北欧</view>
+              </view>
+
+              <view class='imgName'>
+                <text>英特学府</text>
+                <text>137㎡</text>
+              </view>
+              <view style='clear:both;'></view>
+            </view>
+            <!--户型图-->
+            <view class='programme_list'>
+              <view class='header'>
+                <text>户型图</text>
+                <view style='clear:both'></view>
+              </view>
+
+              <view class='programme_3Dimg'>
+                <image src='https://qhyxpicoss.kujiale.com/fpimgnew/2017/12/LJYATJYKKEYK2NJ4AAAAAEI8_800x800.jpg'></image> 
+              </view>
+            </view>
+          </view>  
+        </scroll-view>
+      </swiper-item>  
+
+      <!-- 付款 -->  
+      <swiper-item>  
+        <scroll-view scroll-y>
+          <view class='pay'>
+          <!--定金-->
+            <view class='pay_list'>
+              <view class='header'>
+                <view class='left'>2017-11-26</view>
+                <view class='right'>订金</view>
+                <view class='clear:both'></view>
+              </view>
+
+              <view class='content_list'>
+                <view class='left'>
+                  订金：<text>￥10000</text>
+                </view>
+                <view class='right'>
+                  <button class='goPay'>去付款</button>
+                </view>
+                <view style='clear:both'></view>
+              </view>
+
+              <view class='content'>
+                <view class='address'>浙江省杭州市余杭区融创金城学府6-1-601</view>
+                <view class='info'>
+                  <text>张申贵</text>
+                  <text>男</text>
+                  <text>15876351122</text>
+                </view>
+              </view>
+            </view>
+            <!--量房-->
+            <view class='pay_list'>
+              <view class='header'>
+                <view class='left'>2017-11-26</view>
+                <view class='right'>量房</view>
+                <view class='clear:both'></view>
+              </view>
+
+              <view class='content_list'>
+                <view class='left'>
+                  订金：<text>￥10000</text>
+                </view>
+                <view class='right'>
+                  <button class='goRefund'>退定金</button>
+                </view>
+                <view style='clear:both'></view>
+              </view>
+
+              <view class='content'>
+                <view class='address'>浙江省杭州市余杭区融创金城学府6-1-601</view>
+                <view class='info'>
+                  <text>张申贵</text>
+                  <text>男</text>
+                  <text>15876351122</text>
+                </view>
+              </view>
+            </view>
+
+            <!--合同-->
+            <view class='pay_list'>
+              <view class='header'>
+                <view class='left'>2017-11-26</view>
+                <view class='right'>合同</view>
+                <view class='clear:both'></view>
+              </view>
+
+              <view class='content_list'>
+                <view class='left'>
+                  订金：<text>￥10000</text>
+                </view>
+                <view class='right'>
+                  <button class='goPay'>去付款</button>
+                  <button class='goRefund'>退定金</button>
+                </view>
+                <view style='clear:both'></view>
+              </view>
+
+              <view class='payInfo'>
+                  <view class='list'>
+                    <view class='left'>
+                      订金：<text>￥10000</text>
+                    </view>
+                    <view class='right'>2017-11-26</view>
+                    <view style='clear:both'></view>
+                  </view>
+                  <view class='list'>
+                    <view class='left'>
+                      首付：<text>￥10000</text>
+                    </view>
+                    <view class='right'>待付款</view>
+                    <view style='clear:both'></view>
+                  </view>
+                  <view class='list'>
+                    <view class='left'>
+                      尾款：<text>￥10000</text>
+                    </view>
+                    <view class='right'>竣工后</view>
+                    <view style='clear:both'></view>
+                  </view>
+                  <view class='list' style='border-bottom:1rpx solid #f2f2f2;'>
+                    <view class='left'>
+                      总价：<text style='color:#d2003e'>￥10000</text>
+                    </view>
+                    <view style='clear:both'></view>
+                  </view>
+              </view>
+
+              <view class='content'>
+                <view class='address'>浙江省杭州市余杭区融创金城学府6-1-601</view>
+                <view class='info'>
+                  <text>张申贵</text>
+                  <text>男</text>
+                  <text>15876351122</text>
+                </view>
+              </view>
+            </view>
+          </view>  
+        </scroll-view>
+      </swiper-item>  
+
+      <!-- 阶段 -->  
+      <swiper-item>  
+        <view class='step_header'>
+          <view class='box_line'>
+            <rich-text wx:for='{{ nodes }}' wx:key='{{ index }}' nodes="{{item}}" class='item_group {{ active==index?"active":"" }} {{ nowIndex==index?"now_step":"" }}' bindtap='chooseStep' data-index='{{ index }}'></rich-text>
+            <view style='clear:both'></view>
+          </view>
+        </view>  
+        <view class='step_content'>
+          <view class='content_list'>
+
+          </view>
+        </view>
+      </swiper-item>  
+          
+      <!-- 日志 -->  
+      <swiper-item>  
+        <view>日志</view>  
+      </swiper-item>  
+  </swiper> 
+</view>
